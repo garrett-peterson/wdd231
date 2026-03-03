@@ -59,7 +59,6 @@ header span {
 .navigation a {
   display: block;
   padding: .8rem 10px;
-  color: black;
   text-decoration: none;
   border-bottom: solid 1px #ddd;
 }
@@ -78,6 +77,10 @@ header span {
 
 .navigation li.current {
   background-color:  #D4A373;
+}
+
+.navigation li.current a {
+  color: black;
 }
 
 
