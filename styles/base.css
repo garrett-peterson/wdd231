@@ -68,18 +68,14 @@ header span {
 }
 
 .navigation {
-  background-color: rgb(49, 49, 54);
-}
-
-.navigation a {
-  color: white;
+  background-color: rgb(217, 217, 232);
 }
 
 .navigation li.current {
   background-color:  #D4A373;
 }
 
-.navigation li.current a {
+.navigation a {
   color: black;
 }
 
@@ -87,7 +83,7 @@ header span {
 /******************* Footer *******************/
 
 footer {
-  background-color: #eee;
+  background-color: rgb(217, 217, 232);
   padding: 1rem 1px;
   text-align: center;
 }
