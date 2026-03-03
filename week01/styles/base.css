@@ -135,7 +135,7 @@ h2 {
 }
 
 section {
-  background-color: rgb(199, 199, 216);
+  background-color: rgb(217, 217, 232);
 }
 
 .about p {
@@ -147,6 +147,8 @@ section {
   display: block;
   margin: 0 auto;
   padding: 15px;
+  width: 100%;
+  height: auto;
 }
 
 .divs {
