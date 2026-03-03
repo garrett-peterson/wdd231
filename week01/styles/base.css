@@ -206,3 +206,7 @@ section {
 .courses p {
   text-align: center;
 }
+
+#class-list li.done {
+  background-color: #ffd9b4;
+}
