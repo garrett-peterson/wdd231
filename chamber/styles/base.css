@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+/******************* Header *******************/
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: end;
+  border-bottom: solid 1px #ddd;
+  column-gap: 6px;
+}
+
+header img {
+  display: block;
+  width: 50px;
+  height: auto;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: #3A5C43;
+  padding-left: 15px;
+}
+
+/******************* Hamburger *******************/
+.hamburger {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+/******************* Navigation *******************/
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.navigation a {
+  display: block;
+  padding: .8rem 10px;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation a:hover {
+  background-color: #D4A373;
+}
+
+.navigation {
+  background-color: rgb(217, 217, 232);
+}
+
+.navigation li.current {
+  background-color:  #D4A373;
+}
+
+.navigation a {
+  color: black;
+}
+
