@@ -1,27 +1,47 @@
 @media only screen and (min-width: 38rem) {
-    header, main, nav, footer {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-    
 
-    header {
-        grid-template-columns: 24px auto;
-    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:"head nav" "main main" "foot foot";
+        align-items: center;
 
-    .hamburger {
-        display: none;
+        max-width: 900px;   
+        margin: 0 auto;     
+        width: 100%;
     }
 
-    .navigation {
-        display: block;
+    header { 
+        grid-area: head;
+        height: 44px;
     }
 
-    .navigation ul {
+    #nav-bar { 
+        grid-area: nav;
+        justify-self: end; 
+        margin: 0;
+    }
+
+    main { 
+        grid-area: main;
+    }
+
+    footer { 
+        grid-area: foot;
+    }
+
+    #nav-bar ul {
         display: flex;
-    }
+        list-style: none;
+    } 
 
-    .navigation a {
-        border: none;
+    .hamburger { 
+        display: none; 
+    }
+    .navigation { 
+        display: block; 
+    }
+    .navigation a { 
+        border: none; 
     }
 }
