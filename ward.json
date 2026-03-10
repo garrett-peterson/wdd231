@@ -1,0 +1,18 @@
+{
+    "family_name": "Peterson",
+    "move_in_date": "July 26th, 2026",
+    "number_of_records": 2,
+    "visted_by_bishopric": false,
+    "members": [{
+        "name": "Garrett",
+        "gender": "Male",
+        "birthdate": "March 21st, 2002"
+    },
+    {
+        "name": "Hailey",
+        "gender": "Female",
+        "birthdate": "November 7th, 2000"
+    }
+    ]
+
+}
