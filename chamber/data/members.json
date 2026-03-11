@@ -1,0 +1,60 @@
+{
+    "companies" : [
+        {
+            "name" : "Walmart",
+            "address": "123 YeeHaw Rd Melissa TX, 75454",
+            "phone": "(111) 222-3333",
+            "url": "https://www.walmart.com/",
+            "image": "images/walmart.png",
+            "membership": "2"
+        },
+        {
+            "name" : "Kroger",
+            "address": "123 YeeHaw Rd Melissa TX, 75454",
+            "phone": "(111) 222-3333",
+            "url": "https://www.kroger.com/",
+            "image": "images/kroger.png",
+            "membership": "1"
+        },
+        {
+            "name" : "Kwik Kar Auto Repair",
+            "address": "123 YeeHaw Rd Melissa TX, 75454",
+            "phone": "(111) 222-3333",
+            "url": "https://www.kwikkarntx.com/",
+            "image": "images/kwik.png",
+            "membership": "3"
+        },
+        {
+            "name" : "Buc-ee's",
+            "address": "123 YeeHaw Rd Melissa TX, 75454",
+            "phone": "(111) 222-3333",
+            "url": "https://buc-ees.com/",
+            "image": "images/bucees.jpg",
+            "membership": "3"
+        },
+        {
+            "name" : "H-E-B",
+            "address": "123 YeeHaw Rd Melissa TX, 75454",
+            "phone": "(111) 222-3333",
+            "url": "https://www.heb.com/",
+            "image": "images/heb.png",
+            "membership": "2"
+        },
+        {
+            "name" : "McDonald's",
+            "address": "123 YeeHaw Rd Melissa TX, 75454",
+            "phone": "(111) 222-3333",
+            "url": "https://www.mcdonalds.com/us/en-us.html",
+            "image": "images/mcdonalds.png",
+            "membership": "2"
+        },
+        {
+            "name" : "USPS",
+            "address": "123 YeeHaw Rd Melissa TX, 75454",
+            "phone": "(111) 222-3333",
+            "url": "https://www.usps.com/",
+            "image": "images/post.png",
+            "membership": "1"
+        }
+    ]
+}

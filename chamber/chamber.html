@@ -14,12 +14,19 @@
 
     <script src="../scripts/time.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Melissa Chamber of Commerce Directory">
+    <meta property="og:description" content="Directory Page for Melissa Chamber of Commerce.">
+    <meta property="og:url" content="chamber.html">
+    <meta property="og:image" content="https://www.google.com/imgres?q=melissa%20texas&imgurl=https%3A%2F%2Fassets.site-static.com%2FuserFiles%2F5707%2Fimage%2Fmelissa.jpg&imgrefurl=https%3A%2F%2Fwww.rentnowtx.com%2Fblog%2Fdiscovering-melissa-texas%2F&docid=cJa1h-yTg_erdM&tbnid=dSH8FBXXnk8DrM&vet=12ahUKEwjQxLCThZiTAxVHkmoFHQY0E4gQnPAOegQIGRAB..i&w=841&h=459&hcb=2&ved=2ahUKEwjQxLCThZiTAxVHkmoFHQY0E4gQnPAOegQIGRAB">
+
 
 </head>
 <body>
@@ -39,8 +46,20 @@
     </nav>
 
     <main>
-        
+        <div class="buttons">
+            <button id="gridBtn" class="view-btn active" aria-label="Grid View">
+                <img src="images/grid-active.svg" class="active-icon">
+                <img src="images/grid-outline.svg" class="inactive-icon">
+            </button>
 
+            <button id="listBtn" class="view-btn" aria-label="List View">
+                <img src="images/list-active.svg" class="active-icon">
+                <img src="images/list-outline.svg" class="inactive-icon">
+            </button>
+        </div>
+
+        <div id="cards"></div>
+        
     </main>
   
     <footer>

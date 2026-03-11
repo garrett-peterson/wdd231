@@ -1,0 +1,21 @@
+<!-- grid-outline.svg  |  stroke color: #2E4057  -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-label="Grid view">
+  <!-- outer rounded square -->
+  <rect x="4" y="4" width="56" height="56" rx="10" stroke="#2E4057" stroke-width="4"/>
+
+  <!-- 3x3 outlined squares -->
+  <g stroke="#2E4057" stroke-width="3">
+    <!-- row 1 -->
+    <rect x="17" y="17" width="7" height="7" rx="1.5"/>
+    <rect x="28" y="17" width="7" height="7" rx="1.5"/>
+    <rect x="39" y="17" width="7" height="7" rx="1.5"/>
+    <!-- row 2 -->
+    <rect x="17" y="28" width="7" height="7" rx="1.5"/>
+    <rect x="28" y="28" width="7" height="7" rx="1.5"/>
+    <rect x="39" y="28" width="7" height="7" rx="1.5"/>
+    <!-- row 3 -->
+    <rect x="17" y="39" width="7" height="7" rx="1.5"/>
+    <rect x="28" y="39" width="7" height="7" rx="1.5"/>
+    <rect x="39" y="39" width="7" height="7" rx="1.5"/>
+  </g>
+</svg>
