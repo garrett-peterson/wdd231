@@ -83,11 +83,8 @@ header span {
   color: white;
 }
 
-.navigation li.current {
-  background-color: var(--blue);
-}
-
 .navigation li.current a {
+  background-color: var(--blue);
   color: white;
 }
 
