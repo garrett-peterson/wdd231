@@ -13,8 +13,7 @@
 
     header { 
         grid-area: head;
-        height: 44px;
-        padding-bottom: 10px;
+        height: 60px;
     }
 
     #nav-bar { 
@@ -43,6 +42,7 @@
         display: block; 
     }
     .navigation a { 
+        display: block;
         border: none; 
     }
 

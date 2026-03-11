@@ -14,7 +14,7 @@ header {
   grid-template-columns: 24px auto 44px;
   padding: 5px 0 5px 10px;
   align-items: end;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px var(--background-color);
   column-gap: 6px;
   background-color: var(--background-color);
   padding-bottom: 20px;
@@ -54,6 +54,7 @@ header span {
 
 .navigation {
   display: none;
+  background-color: var(--background-color);
 }
 
 .navigation.show {
@@ -67,33 +68,28 @@ header span {
 }
  
 .navigation a {
-  display: block;
-  padding: .8rem 10px;
+  line-height: 60px;
+  padding: 0 10px;
   text-decoration: none;
-  border-bottom: solid 1px #ddd;
+  color: black;
+}
+
+.show a {
+  display: block;
 }
 
 .navigation a:hover {
   background-color: var(--red);
-  color: #ddd;
-}
-
-.navigation {
-  background-color: var(--background-color)
-}
-
-.navigation a {
-  color: black;
+  color: white;
 }
 
 .navigation li.current {
-  background-color:  var(--blue);
+  background-color: var(--blue);
 }
 
 .navigation li.current a {
-    color: #ddd;
+  color: white;
 }
-
 
 /******************* Footer *******************/
 
@@ -124,10 +120,6 @@ footer {
     padding: 5px;
     width: 50px;
     height: 50px;
-}
-
-.social a:hover {
-  background-color: #ddd;
 }
 
 /******************* Grid *******************/
