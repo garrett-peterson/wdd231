@@ -168,11 +168,21 @@ a {
 }
 
 /******************* List *******************/
-
 tr:nth-child(even) {
-  background-color: #D6EEEE;
+  background-color: var(--background-color);
+}
+table, th, td {
+  border: 2px solid;
 }
 
+table {
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
 
 /******************* Buttons *******************/
 .buttons {
