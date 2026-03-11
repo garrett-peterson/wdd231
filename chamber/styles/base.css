@@ -168,6 +168,7 @@ table, th, td {
 table {
   margin: 50px auto;
   border-collapse: collapse;
+  width: 100%;
 }
 
 th, td {
