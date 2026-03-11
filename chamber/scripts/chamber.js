@@ -60,15 +60,13 @@ const displayListData = (companies) => {
         let phone = document.createElement('td');
         let url = document.createElement('a');
         let link = document.createElement('td');
-        let membership = document.createElement('td');
         
         let row = document.createElement('tr');
 
         name.textContent = `${company.name}`;
         address.textContent = `${company.address}`;
         phone.textContent = `${company.phone}`;
-        membership.textContent = `Membership rating: ${company.membership}`;
-
+       
         url.href = company.url;
         url.textContent = `Visit Website`;
 
@@ -77,7 +75,6 @@ const displayListData = (companies) => {
         row.appendChild(name);
         row.appendChild(address);
         row.appendChild(phone);
-        row.appendChild(membership);
         row.appendChild(link);
 
         body.appendChild(row);
