@@ -17,6 +17,7 @@ header {
   border-bottom: solid 1px #ddd;
   column-gap: 6px;
   background-color: var(--background-color);
+  padding-bottom: 20px;
 }
 
 header img {
@@ -66,10 +67,10 @@ header span {
 }
  
 .navigation a {
-    display: block;
-    padding: .8rem 10px;
-    text-decoration: none;
-    border-bottom: solid 1px #ddd;
+  display: block;
+  padding: .8rem 10px;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
 }
 
 .navigation a:hover {
@@ -222,4 +223,11 @@ button img {
 
 .view-btn.active .inactive-icon {
   display: none;
+}
+
+/******************* Body *******************/
+
+main h1 {
+  color: var(--blue);
+  text-align: center;
 }
