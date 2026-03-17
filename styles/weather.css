@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+h2 {
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+main {
+    text-transform: capitalize;
+    margin: .3rem 0;
+    padding: 5px;
+    border: 1px solid #5d6f67;
+    background-color: #f1f4fa;
+    border-radius: 10px;
+    text-align: center;
+}
