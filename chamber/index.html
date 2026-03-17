@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | WDD 231 | Garrett Peterson</title>
+    <title>Home | WDD 231 | Garrett Peterson</title>
     <meta name="author" content="Garrett Peterson">
     <meta name="description"
-        content="Directory page for the chamber of commerce project with a list of companies.">
+        content="Landing page for my melissa chamber of commerce project for WDD231.">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -15,6 +15,8 @@
     <script src="../scripts/time.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +24,8 @@
 
     <link rel="icon" href="favicon.ico">
 
-    <meta property="og:title" content="Melissa Chamber of Commerce Directory">
-    <meta property="og:description" content="Directory page for the chamber of commerce project with a list of companies.">
+    <meta property="og:title" content="Melissa Chamber of Commerce Landing Page">
+    <meta property="og:description" content="Landing page for my melissa chamber of commerce project for WDD231.">
     <meta property="og:url" content="https://garrett-peterson.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://garrett-peterson.github.io/wdd231/chamber/images/melissa.jpg">
 
@@ -37,28 +39,45 @@
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="#">Directory</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="directory.html">Discover</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Melissa Company Directory</h1>
-        <div class="buttons">
-            <button id="gridBtn" class="view-btn active" aria-label="Grid View">
-                <img src="images/grid-active.svg" alt="Grid Active" class="active-icon">
-                <img src="images/grid-outline.svg" alt="Grid Inactive" class="inactive-icon">
-            </button>
-
-            <button id="listBtn" class="view-btn" aria-label="List View">
-                <img src="images/list-active.svg" alt="List Active" class="active-icon">
-                <img src="images/list-outline.svg" alt="List Inactive" class="inactive-icon">
-            </button>
+        <div class="hero">
+            <img src="images/melissa.jpg" alt="Melissa Texas">
+            <button class="heroBTN">Keynote Tickets</button>
         </div>
 
-        <div id="cards"></div>
+        <h1>Home</h1>
+
+        <section class="events">
+
+        </section>
+
+        <section class="weather">
+            <p id="current-temp"></p>
+            <p id="condition"></p>
+            <p>High: <span id="high"></span></p>
+            <p>Low: <span id="low"></span></p>
+            <p>Humidity: <span id="humid"></span>%</p>
+            <p>Sunrise: <span id="rise"></span></p>
+            <p>Sunset: <span id="set"></span></p>
+
+            <figure>
+            <img id="weather-icon" src="" alt="">
+            </figure>
+        </section>
+
+        <section class="forcast">
+            <p>Today: <span id="todayTemp"></span></p>
+            <p><span id="tomorrow"></span>: <span id="tomTemp"></span></p>
+            <p><span id="dayAfter"></span>: <span id="dayAfterTemp"></span></p>
+
+        </section>
 
     </main>
   
