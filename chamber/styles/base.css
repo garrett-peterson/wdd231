@@ -221,3 +221,128 @@ main h1 {
   color: var(--blue);
   text-align: center;
 }
+
+
+/******************* Home Page *******************/
+
+.sections h2 {
+  color: white;
+  background-color: var(--red);
+  padding: 5px;
+}
+
+.sections section {
+  background-color: var(--background-color);
+}
+
+.sections {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.forecast {
+  text-align: center;
+}
+
+.forecast p {
+  font-size: large;
+  padding-bottom: 8px;
+}
+
+#tomTemp, #dayAfterTemp, #todayTemp, #current-temp {
+  font-weight: bold;
+}
+
+.events p {
+  padding-left: 8px;
+  padding-bottom: 4px;
+  font-size: large;
+}
+
+.events a {
+  color: var(--red);
+}
+
+.currentWeather {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.currentWeather img {
+  height: 85px;
+  width: auto;
+  padding-left: 40px;
+}
+
+.currentWeather p {
+  font-size: medium;
+  margin: 5px;
+}
+
+.homepage {
+  text-align: start;
+  padding-left: 10px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.heroBTN {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--red);
+}
+
+.heroBTN a {
+  color: white;
+  text-decoration: none;
+}
+
+.heroBTN:hover {
+  transform: translateY(2px);
+  background-color: #6b2828;
+}
+
+/******************* Homepage Cards *******************/
+
+.spotlights {
+  margin: 20px;
+}
+
+.spotlights section {
+  padding: 8px;
+  width: 500px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  font-size: small;
+  margin: 15px auto;
+}
+
+.spotlights h2 {
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+.spotlights img {
+  height: 60px;
+  width: auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap:4px;
+}

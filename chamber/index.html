@@ -14,7 +14,7 @@
 
     <script src="../scripts/time.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/homepage.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/forecast.js" defer></script>
 
@@ -49,36 +49,47 @@
     <main>
         <div class="hero">
             <img src="images/melissa.jpg" alt="Melissa Texas">
-            <button class="heroBTN">Keynote Tickets</button>
+            <button class="heroBTN"><a href="join.html">Join Newsletter</a></button>
         </div>
 
-        <h1>Home</h1>
+        <h1 class="homepage">Home</h1>
 
-        <section class="events">
+        <div class="sections">
+            <section class="events">
+                <h2>Events</h2>
+                <p>Picnic in the Park</p>
+                <p>Easter Celebration</p>
+                <p>Fourth of July Concert</p>
+                <p>Learn more about these events and more <a href="discover.html">here</a></p>
+            </section>
 
-        </section>
+            <section class="weather">
+                <h2>Current Weather</h2>
 
-        <section class="weather">
-            <p id="current-temp"></p>
-            <p id="condition"></p>
-            <p>High: <span id="high"></span></p>
-            <p>Low: <span id="low"></span></p>
-            <p>Humidity: <span id="humid"></span>%</p>
-            <p>Sunrise: <span id="rise"></span></p>
-            <p>Sunset: <span id="set"></span></p>
+                <div class="currentWeather">
+                    <img id="weather-icon" src="" alt="">
+                    <div>
+                        <p id="current-temp"></p>
+                        <p id="condition"></p>
+                        <p>High: <span id="high"></span></p>
+                        <p>Low: <span id="low"></span></p>
+                        <p>Humidity: <span id="humid"></span>%</p>
+                        <p>Sunrise: <span id="rise"></span></p>
+                        <p>Sunset: <span id="set"></span></p> 
+                    </div>
+                </div>
+            </section>
 
-            <figure>
-            <img id="weather-icon" src="" alt="">
-            </figure>
-        </section>
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <p>Today: <span id="todayTemp"></span></p>
+                <p><span id="tomorrow"></span>: <span id="tomTemp"></span></p>
+                <p><span id="dayAfter"></span>: <span id="dayAfterTemp"></span></p>
+            </section>
+        </div>
 
-        <section class="forcast">
-            <p>Today: <span id="todayTemp"></span></p>
-            <p><span id="tomorrow"></span>: <span id="tomTemp"></span></p>
-            <p><span id="dayAfter"></span>: <span id="dayAfterTemp"></span></p>
-
-        </section>
-
+        <div id="spotlights" class="spotlights"></div>
+        
     </main>
   
     <footer>

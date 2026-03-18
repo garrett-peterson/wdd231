@@ -50,4 +50,30 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
     }
+
+    .sections {
+        display: grid;
+        grid-template-columns: 450px 1fr 1fr;
+        gap: 15px;
+    }
+
+    .sections h2 {
+        margin: 0;
+    }
+
+    .currentWeather img {
+        height: 65px;
+        width: auto;
+        padding-left: 0;
+    }
+
+    .spotlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .spotlights section {
+        width: 270px;
+    }
 }
