@@ -297,6 +297,8 @@ main h1 {
 
 .heroBTN {
   position: absolute;
+  text-align: center;
+  padding-top: 10px;
   top: 80%;
   left: 80%;
   width: 120px;
@@ -311,7 +313,6 @@ main h1 {
 }
 
 .heroBTN:hover {
-  color: white;
   transform: translateY(2px);
   background-color: #6b2828;
 }
