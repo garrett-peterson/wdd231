@@ -15,7 +15,6 @@ async function forecastFetch() {
     const response = await fetch(forecastURL);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
       displayForecast(data); 
     } else {
         throw Error(await response.text());
