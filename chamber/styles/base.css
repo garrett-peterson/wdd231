@@ -305,9 +305,6 @@ main h1 {
   height: 40px;
   border-radius: 10px;
   background-color: var(--red);
-}
-
-.heroBTN {
   color: white;
   text-decoration: none;
 }
