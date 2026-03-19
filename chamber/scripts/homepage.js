@@ -51,11 +51,15 @@ const displayData = (companies) => {
         let textContainer = document.createElement('div');
 
         let name = document.createElement('h2');
+        let membership = document.createElement('p');
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let url = document.createElement('a');
 
         let logo = document.createElement('img');
+
+        membership.textContent = `Membership rating: ${company.membership}`;
+        membership.classList.add("rating");
 
         name.textContent = `${company.name}`;
         address.textContent = `ADDRESS: ${company.address}`;
@@ -69,6 +73,7 @@ const displayData = (companies) => {
         logo.setAttribute('loading', 'lazy');
         
         card.appendChild(name);
+        card.appendChild(membership)
 
         row.appendChild(logo);
         textContainer.appendChild(phone);

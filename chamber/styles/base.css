@@ -267,6 +267,8 @@ main h1 {
   padding: 8px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  width: 100%;
+  min-width: 0;
 }
 
 .currentWeather img {
@@ -300,7 +302,7 @@ main h1 {
   text-align: center;
   padding-top: 10px;
   top: 80%;
-  left: 80%;
+  left: 44%;
   width: 120px;
   height: 40px;
   border-radius: 10px;
@@ -322,7 +324,7 @@ main h1 {
 
 .spotlights section {
   padding: 8px;
-  width: 500px;
+  width: 85%;
   border-radius: 10px;
   background-color: var(--background-color);
   font-size: small;
@@ -331,8 +333,13 @@ main h1 {
 
 .spotlights h2 {
   text-align: center;
-  padding-bottom: 5px;
+}
+
+.rating {
+  text-align: center;
   border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  padding-top: 0;
 }
 
 .spotlights img {

@@ -53,8 +53,13 @@
 
     .sections {
         display: grid;
-        grid-template-columns: 450px 1fr 1fr;
+        grid-template-columns: minmax(250px, 450px) 1fr 1fr;
         gap: 15px;
+    }
+
+    .sections section {
+        width: 100%;
+        min-width: 0;
     }
 
     .sections h2 {
@@ -69,11 +74,12 @@
 
     .spotlights {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 
     .spotlights section {
-        width: 270px;
+        min-width: 0;
+        width: 100%;
     }
 }
