@@ -97,11 +97,11 @@ function allCourses(courseList) {
         if(course.completed == true) {
         done = '✔';
         credits += course.credits;
-        return `<li class="done"> ${done} ${course.subject} ${course.number}</li>`;
+        return `<li class="done" onclick='displayCourseInfo(${JSON.stringify(course)})'> ${done} ${course.subject} ${course.number}</li>`;
         }
         else {
             credits += course.credits;
-            return `<li> ${course.subject} ${course.number}</li>`;
+            return `<li onclick='displayCourseInfo(${JSON.stringify(course)})'> ${course.subject} ${course.number}</li>`;
         }
     }).join('');
     creditNum.innerHTML = credits;
@@ -114,11 +114,11 @@ function wddCourses(courseList) {
             if(course.completed == true) {
                 done = '✔';
                 credits += course.credits;
-                return `<li class="done"> ${done} ${course.subject} ${course.number}</li>`;
+                return `<li class="done" onclick='displayCourseInfo(${JSON.stringify(course)})'> ${done} ${course.subject} ${course.number}</li>`;
             }
             else {
                 credits += course.credits;
-                return `<li> ${course.subject} ${course.number}</li>`;
+                return `<li onclick='displayCourseInfo(${JSON.stringify(course)})'> ${course.subject} ${course.number}</li>`;
             }
         }
     }).join('');
@@ -132,11 +132,11 @@ function cseCourses(courseList) {
             if(course.completed == true) {
                 done = '✔';
                 credits += course.credits;
-                return `<li class="done"> ${done} ${course.subject} ${course.number}</li>`;
+                return `<li class="done" onclick='displayCourseInfo(${JSON.stringify(course)})'> ${done} ${course.subject} ${course.number}</li>`;
             }
             else {
                 credits += course.credits;
-                return `<li> ${course.subject} ${course.number}</li>`;
+                return `<li onclick='displayCourseInfo(${JSON.stringify(course)})'> ${course.subject} ${course.number}</li>`;
             }
         }
     }).join('');
@@ -144,3 +144,24 @@ function cseCourses(courseList) {
 }
 
 document.addEventListener('DOMContentLoaded', () => allCourses(courses));
+
+const modal = document.querySelector('#course-details');
+
+function displayCourseInfo(course) {
+    modal.innerHTML = "";
+    modal.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <p>${course.title}</p>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    modal.showModal();
+
+    closeModal.addEventListener("click", () => {
+        modal.close();
+  });
+}
+
