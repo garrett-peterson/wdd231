@@ -352,3 +352,203 @@ main h1 {
   grid-template-columns: 1fr 2fr;
   gap:4px;
 }
+
+/******************* Join Form *******************/
+
+.form {
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.form fieldset {
+    margin: 2rem 0;
+    border: none;
+    padding: .5rem 2%;
+}
+
+.form legend {
+    color: var(--text-color);
+}
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+}
+
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form select
+{
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    appearance: none;
+}
+
+.form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(red, var(--red));
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+textarea {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    background-color: white;
+    appearance: none;
+}
+
+.form input:required {
+    border-left: solid 4px red;
+}
+
+.form input:required:valid {
+    border-left: solid 4px green;
+}
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.thankYou {
+  text-align: center;
+}
+
+.joinSections {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.levels div {
+  background-color: var(--background-color);
+  text-align: center;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 15px;
+  height: 110px;
+}
+
+.levels button {
+  width: 90px;
+  background-image: linear-gradient(blue, var(--blue));
+  height: 40px;
+  color: white;
+  border-radius: 15px 0 15px 0;
+}
+
+.sectionHeading {
+  text-align: center;
+  padding: 5px;
+  margin: 15px;
+}
+
+
+@keyframes goldSlide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    background-color: gold;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: var(--background-color);
+  }
+}
+@keyframes goldSlide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    background-color: gold;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: var(--background-color);
+  }
+}
+@keyframes silverSlide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    background-color: silver;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: var(--background-color);
+  }
+}
+@keyframes bronzeSlide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    background-color: #CD7F32;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: var(--background-color);
+  }
+}
+@keyframes npSlide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    background-color: var(--red);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    background-color: var(--background-color);
+  }
+}
+
+.gold {
+  transform: translate(-100%);
+  opacity: 0;
+  animation: goldSlide 1.5s forwards;
+}
+.silver {
+  transform: translate(-100%);
+  opacity: 0;
+  animation: silverSlide 1.5s forwards;
+}
+.bronze {
+  transform: translate(-100%);
+  opacity: 0;
+  animation: bronzeSlide 1.5s forwards;
+}
+.np {
+  transform: translate(-100%);
+  opacity: 0;
+  animation: npSlide 1.5s forwards;
+}
+
+dialog ul, p {
+  text-align: left;
+}

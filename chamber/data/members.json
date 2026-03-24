@@ -6,7 +6,7 @@
             "phone": "(111) 222-3333",
             "url": "https://www.walmart.com/",
             "image": "images/walmart.png",
-            "membership": 2
+            "membership": "Silver"
         },
         {
             "name" : "Kroger",
@@ -14,7 +14,7 @@
             "phone": "(111) 222-3333",
             "url": "https://www.kroger.com/",
             "image": "images/kroger.png",
-            "membership": 1
+            "membership": "Bronze"
         },
         {
             "name" : "Kwik Kar Auto Repair",
@@ -22,7 +22,7 @@
             "phone": "(111) 222-3333",
             "url": "https://www.kwikkarntx.com/",
             "image": "images/kwik.png",
-            "membership": 3
+            "membership": "Gold"
         },
         {
             "name" : "Buc-ee's",
@@ -30,7 +30,7 @@
             "phone": "(111) 222-3333",
             "url": "https://buc-ees.com/",
             "image": "images/bucees.jpg",
-            "membership": 3
+            "membership": "Gold"
         },
         {
             "name" : "H-E-B",
@@ -38,7 +38,7 @@
             "phone": "(111) 222-3333",
             "url": "https://www.heb.com/",
             "image": "images/heb.png",
-            "membership": 2
+            "membership": "Silver"
         },
         {
             "name" : "McDonald's",
@@ -46,7 +46,7 @@
             "phone": "(111) 222-3333",
             "url": "https://www.mcdonalds.com/us/en-us.html",
             "image": "images/mcdonalds.png",
-            "membership": 2
+            "membership": "Silver"
         },
         {
             "name" : "USPS",
@@ -54,7 +54,7 @@
             "phone": "(111) 222-3333",
             "url": "https://www.usps.com/",
             "image": "images/post.png",
-            "membership": 1
+            "membership": "Bronze"
         }
     ]
 }

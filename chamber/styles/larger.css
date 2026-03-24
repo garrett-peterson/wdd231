@@ -82,4 +82,8 @@
         min-width: 0;
         width: 100%;
     }
+
+    .joinSections {
+        grid-template-columns: 1fr 1fr;
+    }
 }

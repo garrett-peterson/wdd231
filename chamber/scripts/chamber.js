@@ -26,7 +26,7 @@ const displayGridData = (companies) => {
         name.textContent = `${company.name}`;
         address.textContent = `${company.address}`;
         phone.textContent = `${company.phone}`;
-        membership.textContent = `Membership rating: ${company.membership}`;
+        membership.textContent = `Membership Level: ${company.membership}`;
 
         url.href = company.url;
         url.textContent = company.url;
