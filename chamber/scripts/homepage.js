@@ -33,7 +33,7 @@ const displayData = (companies) => {
     const silverGold = [];
 
     companies.forEach(company => {
-        if(company.membership > 1) {
+        if(company.membership === "Gold" || company.membership === "Silver") {
             silverGold.push(company);
         }
     });

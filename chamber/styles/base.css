@@ -549,6 +549,6 @@ textarea {
   animation: npSlide 1.5s forwards;
 }
 
-dialog ul, p {
+dialog ul, dialog p {
   text-align: left;
 }
