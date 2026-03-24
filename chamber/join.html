@@ -45,20 +45,21 @@
     </nav>
 
     <main>
+        <h1>Join</h1>
         <div class="joinSections">
             <section>
                 <h2 class="sectionHeading">Membership Application Form</h2>
                 <form method="get" action="thankyou.html" class="form">
                     <fieldset>
-                        <label>First Name: <input type="text" name="fname" autocomplete="given-name" required></label>
-                        <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required></label>
-                        <label>Title Within Organization: <input type="text" name="title" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"></label>
+                        <label>First Name: <input title="First Name" type="text" name="fname" autocomplete="given-name" required></label>
+                        <label>Last Name: <input title="Last Name" type="text" name="lname" autocomplete="family-name" required></label>
+                        <label>Title Within Organization: <input title="Title" type="text" name="title" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"></label>
                     </fieldset>
 
                     <fieldset>
-                        <label>Email: <input type="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required></label>
-                        <label>Phone: <input type="tel" name="phone" placeholder="(999) 999-9999" autocomplete="mobile" required></label>
-                        <label>Business Name: <input type="text" name="bname" required></label>
+                        <label>Email: <input title="Email" type="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required></label>
+                        <label>Phone: <input title="Phone Number" type="tel" name="phone" placeholder="(999) 999-9999" autocomplete="tel" required></label>
+                        <label>Business Name: <input title="Organization Name" type="text" name="bname" autocomplete="organization" required></label>
                     </fieldset>
 
                     <fieldset>
@@ -71,7 +72,7 @@
                                 <option value="Gold">Gold</option>
                             </select>
                         </label>
-                        <label>Business Description: <textarea name="description" id="message" placeholder="Write your message here..."></textarea></label>
+                        <label>Business Description: <textarea title="Organization Description" name="description" id="message" placeholder="Write your message here..."></textarea></label>
                     </fieldset>
 
                     <input type="hidden" name="submission_time" id="submission_time">

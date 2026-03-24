@@ -370,12 +370,6 @@ main h1 {
     color: var(--text-color);
 }
 
-.form label {
-    display: block;
-    padding-top: 1rem;
-}
-
-
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="tel"],
