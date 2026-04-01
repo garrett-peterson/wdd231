@@ -1,6 +1,6 @@
 import { places } from "../data/discover.mjs";
 
-const page = document.querySelector('#cards');
+const page = document.querySelector('#places');
 
 function displayCards() {
     places.forEach(place => {
@@ -22,7 +22,7 @@ function displayCards() {
         img.height = 200;
         img.width = 300;
 
-        button.classList.add('places');
+        button.classList.add('btn');
         div.classList.add('discover');
 
         figure.appendChild(img);
