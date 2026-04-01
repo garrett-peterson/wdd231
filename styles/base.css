@@ -225,10 +225,12 @@ dialog {
   background-color: rgb(0 0 0 / 50%);
 }
 
-dialog button {
+#closeModal {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 23px;
   padding: .5rem 1rem;
   height: 36px;
-}
+} 
+ 
+

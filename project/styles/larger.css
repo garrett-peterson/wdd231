@@ -1,0 +1,54 @@
+@media only screen and (min-width: 38rem) {
+     body {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:"head nav" "main main" "foot foot";
+        align-items: center;
+
+        max-width: 900px;   
+        margin: 0 auto;     
+        width: 100%;
+    }
+
+    header { 
+        grid-area: head;
+        height: 60px;
+    }
+
+    #nav-bar { 
+        grid-area: nav;
+        justify-self: end; 
+        margin: 0;
+    }
+
+    main { 
+        grid-area: main;
+    }
+
+    footer { 
+        grid-area: foot;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        list-style: none;
+    } 
+
+    .hamburger { 
+        display: none; 
+    }
+    .navigation { 
+        display: block; 
+    }
+    .navigation a { 
+        display: block;
+        border: none; 
+    }
+
+    #bookCards {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

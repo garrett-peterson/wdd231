@@ -1,0 +1,209 @@
+:root {
+    --background-color: #F7F5FA;
+    --text-color: #2E2A32;
+    --accent-color: #3C2A4D;
+    --highlight-color:#C6A85E;
+    --heading-text-color:#F7F5FA;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/******************* Fonts *******************/
+body {
+    font-family: 'Lora', serif;
+    color: var(--text-color);
+}   
+
+h1 {
+    background-color: var(--accent-color);
+    color: var(--heading-text-color);
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/******************* Header *******************/
+header {
+  display: grid;
+  grid-template-columns: auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: end;
+  column-gap: 6px;
+  background-color: var(--accent-color);
+  padding-bottom: 20px;
+}
+
+header span {
+  font-size: 1.2rem;
+  color: var(--heading-text-color);
+  padding-left: 15px;
+}
+
+/******************* Hamburger *******************/
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--heading-text-color);
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+/******************* Navigation *******************/
+
+.navigation {
+  display: none;
+  background-color: var(--accent-color);
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+.navigation a {
+  line-height: 60px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: var(--heading-text-color);
+}
+
+.show a {
+  display: block;
+}
+
+.navigation a.current, 
+.navigation a:hover  {
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+}
+
+/******************* Footer *******************/
+
+footer {
+  background-color: var(--accent-color);
+  color: var(--heading-text-color);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+}
+
+.social img {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+/******************* Modal *******************/
+
+dialog {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  padding: 20px;
+  margin: auto;
+  
+}
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 20px;
+  right: 23px;
+  padding: .5rem 1rem;
+  height: 50px;
+  background-color: var(--accent-color);
+  border: none;
+}
+
+#closeModal {
+    font-size:xx-large;
+}
+
+#closeModal :hover {
+    cursor: pointer;
+}
+
+dialog h2 {
+    background-color: var(--accent-color);
+    color: var(--heading-text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+/******************* Catalog *******************/
+
+#bookCards {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+#bookCards section {
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#bookCards button {
+    background-color: var(--accent-color);
+    color: var(--heading-text-color);
+    border-radius: 15px;
+    width: 100%;
+
+    margin-top: auto;
+    font-size: large;
+}
+
+#bookCards button:hover {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    transform: translateY(2px);
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,170 @@
+{
+    "books" : [
+        {
+            "id": 1,
+            "title": "The Dying Sun",
+            "author": "Garrett Peterson",
+            "pages": 500,
+            "genre": "Epic Fantasy",
+            "publishedDate": "2026-11-03",
+            "price": 19.99,
+            "description": "In Vantera, a hunted Light manipulator may doom the city, forcing unlikely allies to question sacrifice, faith, and whether the Order is right.",
+            "featured": true
+        },
+        {
+            "id": 2,
+            "title": "Whispers of the Hollow Vale",
+            "author": "Maris Elowen",
+            "pages": 368,
+            "genre": "Fantasy",
+            "publishedDate": "2021-10-02",
+            "price": 17.99,
+            "description": "Strange voices echo through the vale, calling a young healer into a hidden world of spirits, secrets, and ancient magic.",
+            "featured": true
+        },
+        {
+            "id": 3,
+            "title": "The Clockmaker’s Oath",
+            "author": "Jonas Keld",
+            "pages": 295,
+            "genre": "Fantasy",
+            "publishedDate": "2023-01-21",
+            "price": 16.50,
+            "description": "A master clockmaker binds time itself to save his city, but every second he steals brings him closer to ruin.",
+            "featured": false
+        },
+        {
+            "id": 4,
+            "title": "Stormbound Legends",
+            "author": "Kaelin Dross",
+            "pages": 430,
+            "genre": "Fantasy",
+            "publishedDate": "2020-07-18",
+            "price": 21.00,
+            "description": "Warriors chosen by the storm must unite against a rising darkness that threatens to swallow the skies.",
+            "featured": true
+        },
+        {
+            "id": 5,
+            "title": "The Ember Witch",
+            "author": "Selene Arkwright",
+            "pages": 352,
+            "genre": "Fantasy",
+            "publishedDate": "2022-11-05",
+            "price": 18.75,
+            "description": "Marked by flame and feared by all, a young witch must embrace her power to stop a kingdom from burning.",
+            "featured": false
+        },
+        {
+            "id": 6,
+            "title": "Veil of the Forgotten King",
+            "author": "Darian Holt",
+            "pages": 390,
+            "genre": "Fantasy",
+            "publishedDate": "2019-05-27",
+            "price": 20.25,
+            "description": "A lost king returns from myth, but the truth behind his legend may destroy the realm he once ruled.",
+            "featured": false
+        },
+        {
+            "id": 7,
+            "title": "Silverblade Rebellion",
+            "author": "Talia Vire",
+            "pages": 410,
+            "genre": "Fantasy",
+            "publishedDate": "2023-06-09",
+            "price": 19.50,
+            "description": "An underground rebellion rises against a tyrant, led by a warrior wielding a blade said to cut through fate itself.",
+            "featured": false
+        },
+        {
+            "id": 8,
+            "title": "The Glass Sea",
+            "author": "Orin Vale",
+            "pages": 322,
+            "genre": "Fantasy",
+            "publishedDate": "2021-08-30",
+            "price": 17.25,
+            "description": "Sailing across a sea turned to glass, a crew of outcasts seeks a cure for a curse that has frozen the world.",
+            "featured": false
+        },
+        {
+            "id": 9,
+            "title": "Runes of the Last Guardian",
+            "author": "Eldra Morn",
+            "pages": 375,
+            "genre": "Fantasy",
+            "publishedDate": "2020-12-12",
+            "price": 18.00,
+            "description": "The last guardian of an ancient order must decipher forbidden runes before a sealed evil awakens.",
+            "featured": true
+        },
+        {
+            "id": 10,
+            "title": "A Kingdom Beneath Ice",
+            "author": "Freya Norlund",
+            "pages": 344,
+            "genre": "Fantasy",
+            "publishedDate": "2022-02-08",
+            "price": 18.40,
+            "description": "Beneath a frozen wasteland lies a hidden kingdom, and a secret that could reshape the surface world forever.",
+            "featured": false
+        },
+        {
+            "id": 11,
+            "title": "The Lanterns of Evernight",
+            "author": "Calem Thorne",
+            "pages": 289,
+            "genre": "Fantasy",
+            "publishedDate": "2023-09-15",
+            "price": 15.99,
+            "description": "In a city where night never ends, enchanted lanterns hold back creatures lurking in the dark.",
+            "featured": false
+        },
+        {
+            "id": 12,
+            "title": "Crown of the Starfallen",
+            "author": "Lyra Quen",
+            "pages": 402,
+            "genre": "Fantasy",
+            "publishedDate": "2021-04-03",
+            "price": 19.75,
+            "description": "A fallen star grants power to a reluctant queen, but using it may cost her everything she holds dear.",
+            "featured": true
+        },
+        {
+            "id": 13,
+            "title": "The Bone Archivist",
+            "author": "Marek Solis",
+            "pages": 330,
+            "genre": "Dark Fantasy",
+            "publishedDate": "2020-10-22",
+            "price": 17.80,
+            "description": "A keeper of forbidden relics uncovers a conspiracy buried in bones and shadow.",
+            "featured": false
+        },
+        {
+            "id": 14,
+            "title": "Echoes of the Sunforge",
+            "author": "Riven Kael",
+            "pages": 415,
+            "genre": "Fantasy",
+            "publishedDate": "2023-11-01",
+            "price": 20.50,
+            "description": "Forged in celestial fire, a legendary weapon resurfaces, drawing heroes and villains into a race for its power.",
+            "featured": false
+        },
+
+        {
+            "id": 15,
+            "title": "The Ashen Crown",
+            "author": "Elric Vantor",
+            "pages": 412,
+            "genre": "Fantasy",
+            "publishedDate": "2022-03-14",
+            "price": 19.99,
+            "description": "When a fallen prince discovers a crown forged in dragonfire, he must reclaim a shattered kingdom before the ashes consume everything.",
+            "featured": true
+        }
+    ]
+}
