@@ -166,6 +166,7 @@ dialog h2 {
     color: var(--heading-text-color);
     padding: 10px;
     text-align: center;
+    width: 100%;
 }
 
 /******************* Catalog *******************/
@@ -206,4 +207,20 @@ dialog h2 {
 
 .center {
     text-align: center;
+}
+
+.cover {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    align-self: center;
+    margin-top: auto;
+}
+
+dialog img {
+    padding-top: 15px;
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
 }

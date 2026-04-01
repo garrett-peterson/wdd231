@@ -16,11 +16,17 @@ const displayData = (books) => {
         let name = document.createElement('h2');
         let author = document.createElement('p');
         let genre = document.createElement('p');
+        let img = document.createElement('img');
         let button = document.createElement('button');
 
         name.textContent = book.title;
         author.textContent = book.author;
         genre.textContent = book.genre;
+
+        img.src = `images/${book.image}`;
+        img.alt = "Book Cover";
+        img.loading = "lazy";
+        img.classList.add('cover');
 
         button.classList.add('learn');
         button.textContent = "Learn More";
@@ -29,6 +35,7 @@ const displayData = (books) => {
         card.appendChild(name);
         card.appendChild(author);
         card.appendChild(genre);
+        card.appendChild(img);
         card.appendChild(button);
 
         bookElement.appendChild(card);
@@ -52,6 +59,7 @@ function displayBookInfo(book) {
     <p class="center">Published on: ${book.publishedDate}</p>
     <p class="center">Page Count: ${book.pages}</p>
     <p class="center">Price: $${book.price}</p>
+    <img class="cover center" src="images/${book.image}" alt="${book.title} cover">
     `;
     modal.showModal();
 

@@ -8,6 +8,7 @@
             "genre": "Epic Fantasy",
             "publishedDate": "2026-11-03",
             "price": 19.99,
+            "image": "dyingSun.png",
             "description": "In Vantera, a hunted Light manipulator may doom the city, forcing unlikely allies to question sacrifice, faith, and whether the Order is right.",
             "featured": true
         },
@@ -19,6 +20,7 @@
             "genre": "Fantasy",
             "publishedDate": "2021-10-02",
             "price": 17.99,
+            "image": "hollowVale.png",
             "description": "Strange voices echo through the vale, calling a young healer into a hidden world of spirits, secrets, and ancient magic.",
             "featured": true
         },
@@ -30,6 +32,7 @@
             "genre": "Fantasy",
             "publishedDate": "2023-01-21",
             "price": 16.50,
+            "image": "clockmaker.png",
             "description": "A master clockmaker binds time itself to save his city, but every second he steals brings him closer to ruin.",
             "featured": false
         },
@@ -41,6 +44,7 @@
             "genre": "Fantasy",
             "publishedDate": "2020-07-18",
             "price": 21.00,
+            "image": "stormbound.png",
             "description": "Warriors chosen by the storm must unite against a rising darkness that threatens to swallow the skies.",
             "featured": true
         },
@@ -52,6 +56,7 @@
             "genre": "Fantasy",
             "publishedDate": "2022-11-05",
             "price": 18.75,
+            "image": "ember.png",
             "description": "Marked by flame and feared by all, a young witch must embrace her power to stop a kingdom from burning.",
             "featured": false
         },
@@ -63,6 +68,7 @@
             "genre": "Fantasy",
             "publishedDate": "2019-05-27",
             "price": 20.25,
+            "image": "forgottenKing.png",
             "description": "A lost king returns from myth, but the truth behind his legend may destroy the realm he once ruled.",
             "featured": false
         },
@@ -74,6 +80,7 @@
             "genre": "Fantasy",
             "publishedDate": "2023-06-09",
             "price": 19.50,
+            "image": "silverblade.png",
             "description": "An underground rebellion rises against a tyrant, led by a warrior wielding a blade said to cut through fate itself.",
             "featured": false
         },
@@ -85,6 +92,7 @@
             "genre": "Fantasy",
             "publishedDate": "2021-08-30",
             "price": 17.25,
+            "image": "glass.png",
             "description": "Sailing across a sea turned to glass, a crew of outcasts seeks a cure for a curse that has frozen the world.",
             "featured": false
         },
@@ -96,6 +104,7 @@
             "genre": "Fantasy",
             "publishedDate": "2020-12-12",
             "price": 18.00,
+            "image": "guardian.png",
             "description": "The last guardian of an ancient order must decipher forbidden runes before a sealed evil awakens.",
             "featured": true
         },
@@ -107,6 +116,7 @@
             "genre": "Fantasy",
             "publishedDate": "2022-02-08",
             "price": 18.40,
+            "image": "beneathIce.png",
             "description": "Beneath a frozen wasteland lies a hidden kingdom, and a secret that could reshape the surface world forever.",
             "featured": false
         },
@@ -118,6 +128,7 @@
             "genre": "Fantasy",
             "publishedDate": "2023-09-15",
             "price": 15.99,
+            "image": "evernight.png",
             "description": "In a city where night never ends, enchanted lanterns hold back creatures lurking in the dark.",
             "featured": false
         },
@@ -129,6 +140,7 @@
             "genre": "Fantasy",
             "publishedDate": "2021-04-03",
             "price": 19.75,
+            "image": "starfallen.png",
             "description": "A fallen star grants power to a reluctant queen, but using it may cost her everything she holds dear.",
             "featured": true
         },
@@ -140,6 +152,7 @@
             "genre": "Dark Fantasy",
             "publishedDate": "2020-10-22",
             "price": 17.80,
+            "image": "bone.png",
             "description": "A keeper of forbidden relics uncovers a conspiracy buried in bones and shadow.",
             "featured": false
         },
@@ -151,6 +164,7 @@
             "genre": "Fantasy",
             "publishedDate": "2023-11-01",
             "price": 20.50,
+            "image": "sunforge.png",
             "description": "Forged in celestial fire, a legendary weapon resurfaces, drawing heroes and villains into a race for its power.",
             "featured": false
         },
@@ -163,6 +177,7 @@
             "genre": "Fantasy",
             "publishedDate": "2022-03-14",
             "price": 19.99,
+            "image": "ashen.png",
             "description": "When a fallen prince discovers a crown forged in dragonfire, he must reclaim a shattered kingdom before the ashes consume everything.",
             "featured": true
         }
