@@ -23,6 +23,7 @@ function displayCards() {
         img.width = 300;
 
         button.classList.add('places');
+        div.classList.add('discover');
 
         figure.appendChild(img);
 
