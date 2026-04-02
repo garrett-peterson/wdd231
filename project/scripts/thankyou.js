@@ -19,10 +19,12 @@ thankYou.innerHTML = `
 <div class="thankYou">
 <h2 class="thanks">Thank You!</h2>
 <p>${fname} ${lname}, thank you for your order on ${date}</p>
+<p>We will send tracking info to ${email}</p>
+<p><br></p>
 <p>Books Ordered:</p>
 <ul id="orderedBooksList"></ul>
+<p><br></p>
 <p>Your final total is: $${total}</p>
-<p>We will send tracking info to ${email}</p>
 </div>
 `;
 
