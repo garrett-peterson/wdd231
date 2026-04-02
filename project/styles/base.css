@@ -268,5 +268,147 @@ dialog img {
 .order {
   display: grid;
   grid-template-columns: 1fr;
-  place-items: center;
+  place-items: start;
+}
+
+/******************* Order Form *******************/
+
+.form {
+  width: 400px;
+  margin: 2rem auto;
+}
+
+.form fieldset {
+    margin: 2rem 0;
+    border: none;
+    padding: .5rem 2%;
+}
+
+.form legend {
+    color: var(--text-color);
+}
+
+.form input[type="text"],
+.form input[type="email"]
+{
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    appearance: none;
+}
+
+.form input:required {
+    border-left: solid 4px red;
+}
+
+.form input:required:valid {
+    border-left: solid 4px green;
+}
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.thankYou {
+  text-align: center;
+}
+
+.joinSections {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.levels div {
+  background-color: var(--background-color);
+  text-align: center;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 15px;
+  height: 110px;
+}
+
+#placeOrder{
+  border: none;
+  background-image: linear-gradient(var(--accent-color), #1c1424);
+  height: 40px;
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+  font-size: large;
+  box-shadow: 1px 1px 4px #999;
+  margin: -1rem 2% 2rem 2%;
+  padding: 6px;
+  width: 96%;
+}
+
+#placeOrder:hover {
+  background-image: linear-gradient(var(--highlight-color), #a0894f);
+  color: var(--heading-text-color);
+  transform: translateY(2px);
+}
+
+.sectionHeading {
+  text-align: center;
+  padding: 5px;
+  margin: 15px;
+}
+
+.thankYou {
+  margin: 50px;
+  text-align: left;
+}
+
+.thanks {
+  margin: 15px;
+}
+
+.form label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  margin: 0;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  transform: scale(0);
+  background-color: var(--highlight-color);
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.total {
+  font-size: large;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+#orderedBooksList {
+  list-style-type: none;
 }

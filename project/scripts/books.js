@@ -3,6 +3,10 @@ import { displayBookInfo } from "./modal.js";
 const bookElement = document.querySelector("#bookCards");
 const wishlistDisplay = document.querySelector('#wishlistDisplay');
 
+const allBooks = document.querySelectorAll('[name="books"]');
+const runningTotal = document.querySelector('#runningTotal');
+let currentPrice = parseFloat(runningTotal.textContent, 10);
+
 const path = "data/books.json";
 
 let data;
@@ -158,6 +162,36 @@ function displayWishlist(books) {
     }});
     displayData(filtered);
 }
+
+allBooks.forEach(book =>{
+    book.addEventListener('change', (event) => {
+    if (event.target.checked) {
+      addTotal(event.target.value);
+    } else {
+      removeTotal(event.target.value);
+    }
+  });
+});
+
+function addTotal(book) {
+    const add = data.books[book-1];
+    currentPrice += add.price;
+    runningTotal.textContent = currentPrice.toFixed(2);
+}
+
+function removeTotal(book) {
+    const remove = data.books[book-1];
+    currentPrice -= remove.price;
+    if (currentPrice < 0) {
+        runningTotal.textContent = 0.00;
+    }
+    else {
+        runningTotal.textContent = currentPrice.toFixed(2);
+    }
+}
+
+
+
 
 getWishlist();
 getBookData();

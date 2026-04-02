@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Warrior Publishing Homepage</title>
+    <meta name="author" content="Garrett Peterson">
+    <meta name="description" content="Order Confirmation page that displays a thank you note">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="warrior.ico">
+</head>
+<body>
+    <header>
+        <span>Eternal Warrior Publishing</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="catalog.html">Book Catalog</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div id="thanks"></div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Eternal Warrior Publishing</p>
+            <p>123 Writing Rd</p>
+            <p>Publish, TX 75454</p>
+            <p>info@eternalwarrior.org</p>
+            <p>(111) 222-3333</p>
+        </div>
+
+        <div id="icons" class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/garrett-peterson-1340a63a6/" target="_blank"><img src="images/linkedin.svg" alt="linkedIn Logo" width="16" height="16"></a>
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="Github Logo" width="16" height="16"></a>
+        </div>
+        
+        <div>
+            <p>WDD 231 Final Project</p>
+            <p>Garrett Peterson</p>
+            <p>&copy; <span id="currentyear"></span> Eternal Warrior Publishing</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

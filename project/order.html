@@ -12,6 +12,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/order.js" defer></script>
     <script type="module" src="scripts/books.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +40,45 @@
         <h1>Order Page</h1>
         <div class="order">
             <section class="form">
+                <form method="get" action="thankyou.html" class="form">
+                    <fieldset>
+                        <label>First Name: <input title="First Name" type="text" name="fname" autocomplete="given-name" required></label>
+                        <label>Last Name: <input title="Last Name" type="text" name="lname" autocomplete="family-name" required></label>
+                        <label>Email: <input title="Email" type="email" name="email" placeholder="someone@gmail.com" autocomplete="email" required></label>
+                    </fieldset>
 
+                    <fieldset>
+                        <label>City:<input type="text" id="city" name="city" autocomplete="address-level2" required></label>
+                        <label>Street Address:<input type="text" id="street" name="street" autocomplete="address-line1" required></label>
+                        <label>Unit / Apartment Number:<input type="text" id="unit" name="unit" autocomplete="address-line2"></label>
+                        <label>Zip Code:<input type="text" id="zip" name="zip" autocomplete="postal-code" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <label><input type="checkbox" name="books" value="1">The Dying Sun ($19.99)</label>
+                        <label><input type="checkbox" name="books" value="2">Whispers of the Hollow Vale ($17.99)</label>
+                        <label><input type="checkbox" name="books" value="3">The Clockmaker’s Oath ($16.50)</label>
+                        <label><input type="checkbox" name="books" value="4">Stormbound Legends ($21.00)</label>
+                        <label><input type="checkbox" name="books" value="5">The Ember Witch ($18.75)</label>
+                        <label><input type="checkbox" name="books" value="6">Veil of the Forgotten King ($20.25)</label>
+                        <label><input type="checkbox" name="books" value="7">Silverblade Rebellion ($19.50)</label>
+                        <label><input type="checkbox" name="books" value="8">The Glass Sea ($17.25)</label>
+                        <label><input type="checkbox" name="books" value="9">Runes of the Last Guardian ($18.00)</label>
+                        <label><input type="checkbox" name="books" value="10">A Kingdom Beneath Ice ($18.40)</label>
+                        <label><input type="checkbox" name="books" value="11">Lanterns of Evernight ($15.99)</label>
+                        <label><input type="checkbox" name="books" value="12">Crown of the Starfallen ($19.75)</label>
+                        <label><input type="checkbox" name="books" value="13">The Bone Archivist ($17.80)</label>
+                        <label><input type="checkbox" name="books" value="14">Echoes of the Sunforge ($20.50)</label>
+                        <label><input type="checkbox" name="books" value="15">The Ashen Crown ($19.99)</label>
+
+                        <p class="total">Order Total: $<span id="runningTotal" name="runningTotal">0.00</span></p>
+                        <input type="hidden" name="finalTotal" id="finalTotal">
+                    </fieldset>
+
+                    <input type="hidden" name="submission_time" id="submission_time">
+
+                    <input type="submit" value="Place Order" id="placeOrder">
+                </form>
             </section>
 
             <section class="wishlistSection">
