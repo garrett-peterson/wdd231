@@ -1,7 +1,7 @@
 {
     "books" : [
         {
-            "id": 1,
+            "id": "1",
             "title": "The Dying Sun",
             "author": "Garrett Peterson",
             "pages": 500,
@@ -13,7 +13,7 @@
             "featured": true
         },
         {
-            "id": 2,
+            "id": "2",
             "title": "Whispers of the Hollow Vale",
             "author": "Maris Elowen",
             "pages": 368,
@@ -25,7 +25,7 @@
             "featured": true
         },
         {
-            "id": 3,
+            "id": "3",
             "title": "The Clockmaker’s Oath",
             "author": "Jonas Keld",
             "pages": 295,
@@ -37,7 +37,7 @@
             "featured": false
         },
         {
-            "id": 4,
+            "id": "4",
             "title": "Stormbound Legends",
             "author": "Kaelin Dross",
             "pages": 430,
@@ -49,7 +49,7 @@
             "featured": true
         },
         {
-            "id": 5,
+            "id": "5",
             "title": "The Ember Witch",
             "author": "Selene Arkwright",
             "pages": 352,
@@ -61,7 +61,7 @@
             "featured": false
         },
         {
-            "id": 6,
+            "id": "6",
             "title": "Veil of the Forgotten King",
             "author": "Darian Holt",
             "pages": 390,
@@ -73,7 +73,7 @@
             "featured": false
         },
         {
-            "id": 7,
+            "id": "7",
             "title": "Silverblade Rebellion",
             "author": "Talia Vire",
             "pages": 410,
@@ -85,7 +85,7 @@
             "featured": false
         },
         {
-            "id": 8,
+            "id": "8",
             "title": "The Glass Sea",
             "author": "Orin Vale",
             "pages": 322,
@@ -97,7 +97,7 @@
             "featured": false
         },
         {
-            "id": 9,
+            "id": "9",
             "title": "Runes of the Last Guardian",
             "author": "Eldra Morn",
             "pages": 375,
@@ -109,7 +109,7 @@
             "featured": true
         },
         {
-            "id": 10,
+            "id": "10",
             "title": "A Kingdom Beneath Ice",
             "author": "Freya Norlund",
             "pages": 344,
@@ -121,7 +121,7 @@
             "featured": false
         },
         {
-            "id": 11,
+            "id": "11",
             "title": "The Lanterns of Evernight",
             "author": "Calem Thorne",
             "pages": 289,
@@ -133,7 +133,7 @@
             "featured": false
         },
         {
-            "id": 12,
+            "id": "12",
             "title": "Crown of the Starfallen",
             "author": "Lyra Quen",
             "pages": 402,
@@ -145,7 +145,7 @@
             "featured": true
         },
         {
-            "id": 13,
+            "id": "13",
             "title": "The Bone Archivist",
             "author": "Marek Solis",
             "pages": 330,
@@ -157,7 +157,7 @@
             "featured": false
         },
         {
-            "id": 14,
+            "id": "14",
             "title": "Echoes of the Sunforge",
             "author": "Riven Kael",
             "pages": 415,
@@ -170,7 +170,7 @@
         },
 
         {
-            "id": 15,
+            "id": "15",
             "title": "The Ashen Crown",
             "author": "Elric Vantor",
             "pages": 412,

@@ -4,9 +4,9 @@ export function displayBookInfo(book) {
     modal.innerHTML = "";
     modal.innerHTML = `
     <button id="closeModal"><span style="color: #C6A85E;">&times;</span></button>
-    <h2 class="center">${book.author}</h2>
-    <p class="center">${book.title}</p>
-    <p class="center">${book.genre}</p>
+    <h2 class="center">${book.title}</h2>
+    <p class="center">By: ${book.author}</p>
+    <p class="center">Genre: ${book.genre}</p>
     <p><br></p>
     <p>${book.description}</p>
     <p><br></p>

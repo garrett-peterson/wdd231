@@ -178,7 +178,14 @@ dialog h2 {
     gap: 15px;
 }
 
-#bookCards section {
+#wishlistDisplay {
+  display: grid;
+  width: 200px;
+  gap: 15px;
+}
+
+#bookCards section, 
+#wishlistDisplay section {
     background-color: var(--background-color);
     padding: 10px;
     border-radius: 10px;
@@ -189,7 +196,8 @@ dialog h2 {
     gap: 5px;
 }
 
-#bookCards button {
+#bookCards button, 
+#wishlistDisplay button {
     background-color: var(--accent-color);
     color: var(--heading-text-color);
     border-radius: 15px;
@@ -199,7 +207,8 @@ dialog h2 {
     font-size: large;
 }
 
-#bookCards button:hover {
+#bookCards .learn:hover,
+#wishlistDisplay .learn:hover {
     background-color: var(--highlight-color);
     color: var(--text-color);
     transform: translateY(2px);
@@ -223,4 +232,24 @@ dialog img {
     margin: 0 auto;
     max-width: 200px;
     height: auto;
+}
+
+#bookCards .star, 
+#wishlistDisplay .star{
+    font-size: x-large;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: var(--highlight-color);
+    background-color: transparent;
+    max-width: 25px;
+    max-height: 25px;
+    margin-top: -6px;
+}
+
+.wishlistContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 5px;
 }

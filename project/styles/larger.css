@@ -47,7 +47,7 @@
         border: none; 
     }
 
-    #bookCards {
+    #bookCards{
     grid-template-columns: 1fr 1fr 1fr;
     }
 
