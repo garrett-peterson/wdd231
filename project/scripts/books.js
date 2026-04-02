@@ -5,7 +5,10 @@ const wishlistDisplay = document.querySelector('#wishlistDisplay');
 
 const allBooks = document.querySelectorAll('[name="books"]');
 const runningTotal = document.querySelector('#runningTotal');
-let currentPrice = parseFloat(runningTotal.textContent, 10);
+
+if (runningTotal) {
+    let currentPrice = parseFloat(runningTotal.textContent, 10);
+}
 
 const path = "data/books.json";
 
