@@ -25,6 +25,7 @@ h1 {
     padding: 15px;
     text-align: center;
     font-family: 'Playfair Display', serif;
+    border-radius: 0 0 15px 15px;
 }
 
 /******************* Header *******************/
@@ -149,8 +150,8 @@ dialog button {
   right: 23px;
   padding: .5rem 1rem;
   height: 50px;
-  background-color: var(--accent-color);
   border: none;
+  background-color: transparent;
 }
 
 #closeModal {
@@ -169,19 +170,13 @@ dialog h2 {
     width: 100%;
 }
 
-/******************* Catalog *******************/
+/******************* Catalog/Order *******************/
 
 #bookCards {
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-}
-
-#wishlistDisplay {
-  display: grid;
-  width: 200px;
-  gap: 15px;
 }
 
 #bookCards section, 
@@ -252,4 +247,26 @@ dialog img {
   justify-content: center;
   align-items: center; 
   gap: 5px;
+}
+
+#wishlistDisplay {
+  display: grid;
+  width: 400px;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.wishlistSection h2 {
+  color: var(--text-color);
+  text-align: center;  
+}
+
+#wishlistHeader {
+  margin: 10px;
+}
+
+.order {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
 }
