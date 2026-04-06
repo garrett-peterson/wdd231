@@ -134,6 +134,15 @@ footer {
     height: 50px;
 }
 
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 /******************* Modal *******************/
 
 dialog {
