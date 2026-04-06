@@ -41,6 +41,7 @@ header {
   column-gap: 6px;
   background-color: var(--accent-color);
   padding-bottom: 20px;
+  color: var(--heading-text-color);
 }
 
 header span {
@@ -320,14 +321,6 @@ dialog img {
     padding-top: 1rem;
 }
 
-.thanks {
-  text-align: center;
-}
-
-.thankYou {
-  text-align: center;
-}
-
 .joinSections {
   display: grid;
   grid-template-columns: 1fr;
@@ -374,6 +367,7 @@ dialog img {
 
 .thanks {
   margin: 15px;
+  text-align: center;
 }
 
 .form label:has(input[type="checkbox"]) {
@@ -446,10 +440,6 @@ input[type="checkbox"]:checked::before {
     border-radius: 12px;
     padding: 1rem;
     color: var(--text-color);
-}
-
-.purpose {
-    margin: 1rem 1rem -1rem;
 }
 
 .layout {
