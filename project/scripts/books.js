@@ -6,6 +6,9 @@ const wishlistDisplay = document.querySelector('#wishlistDisplay');
 const allBooks = document.querySelectorAll('[name="books"]');
 const runningTotal = document.querySelector('#runningTotal');
 
+const upcomingBooks = document.querySelector('#upcoming');
+const featuredBook = document.querySelector('#featured');
+
 
 let currentPrice;
 if (runningTotal) {
@@ -31,6 +34,14 @@ async function getBookData() {
         }
         if (wishlistDisplay) {
             displayWishlist(data.books);
+        }
+
+        if (upcomingBooks) {
+            loadUpcomingBooks(data.books);
+        }
+
+        if (featuredBook) {
+            loadFeaturedBook(data.books);
         }
 
     } catch (error) {
@@ -195,7 +206,65 @@ function removeTotal(book) {
     }
 }
 
+function loadUpcomingBooks(books) {
+    const today = new Date().toISOString().split('T')[0];
+    let unpublished = ``;
 
+    books.forEach(book => {
+        if (book.publishedDate > today) {
+            unpublished += `
+                <div class="unpublished">
+                    <br>
+                    <p>${book.title}</p>
+                    <p>Will be published on: ${book.publishedDate}</p>
+                    <p>Written by: ${book.author}</p>
+                    <br>
+                </div>
+            `;
+        }
+        upcomingBooks.innerHTML = unpublished;
+    });
+}
+
+function shuffled(elements) {
+    const copy = [...elements];
+    let m = copy.length;
+
+    while (m) {
+        const i = Math.floor(Math.random() * m--);
+
+        [copy[m], copy[i]] = [copy[i], copy[m]];
+    }
+
+    return copy;
+}
+
+
+function chooseRandom(elements, n) {
+     return shuffled(elements).slice(0, n);
+}
+
+function loadFeaturedBook(books) {
+    const featuredBooks = [];
+
+    books.forEach(book => {
+        if(book.featured == true) {
+            featuredBooks.push(book);
+        }
+    });
+
+    const filteredBook = chooseRandom(featuredBooks, 1);
+
+    console.log(filteredBook[0].title);
+    featuredBook.innerHTML = `
+        <br>
+        <div class="highlight">
+            <h3>${filteredBook[0].title}</h3>
+            <p>${filteredBook[0].description}</p>
+            <img src="images/${filteredBook[0].image}" alt="Cover for ${filteredBook[0].title}">
+        </div>
+    `;
+}
 
 
 getWishlist();

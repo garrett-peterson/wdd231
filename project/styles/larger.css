@@ -59,4 +59,58 @@
     #wishlistDisplay {
         width: 200px;
     }
+
+    .purpose {
+        padding: .5rem;
+        position:absolute;
+        bottom:20px;
+        left:100px;
+        right:100px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        color: var(--text-color);
+        margin: 1rem;
+    }
+
+    .hero {
+        position: relative; 
+    }
+
+    .info  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        max-width: 1100px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .learn {
+        grid-column: 1 / -1;
+    }
+
+    .upcoming, .featured, .learn {
+        background: var(--background-color);
+        border-radius: 12px;
+        padding: 1rem;
+        color: var(--text-color);
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .layout img {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding: 0;
+    }
+
+    .layout a {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        place-self: center;
+        margin: 0;
+    }
 }

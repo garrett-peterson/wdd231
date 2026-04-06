@@ -12,6 +12,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/books.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +36,37 @@
     
     <main>
         <h1>Homepage</h1>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/books-large.jpg" media="(min-width: 600px)">
+                <img src="images/books-small.jpg" alt="A stack of books" loading="lazy">
+            </picture>
+
+            <div class="purpose">
+                <h2>Our Purpose in Publishing</h2>
+                <p>At Eternal Warrior Publishing, we strive to find, write and publish excellent quality fantasy books for all ages. We publish clean fantasy, that tells excellent stories and uplifts our readers. Imagination is the essence of storytelling.</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="upcoming">
+                <h2>Upcoming Books</h2>
+                <div id="upcoming"></div>
+            </div>
+
+            <div class="featured">
+                <h2>Featured Book</h2>
+                <div id="featured"></div>
+            </div>
+
+            <div class="learn">
+                <div class="layout">
+                    <img src="images/books.jpg" alt="Stack of books" width="180" loading="lazy">
+                    <a href="catalog.html">Browse Catalog Now</a>
+                </div>
+            </div>
+        </div>
 
     </main>
 
