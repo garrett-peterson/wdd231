@@ -71,6 +71,7 @@ header span {
 .navigation {
   display: none;
   background-color: var(--accent-color);
+  color: var(--heading-text-color);
 }
 
 .navigation.show {
