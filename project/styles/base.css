@@ -158,7 +158,7 @@ dialog button {
     font-size:xx-large;
 }
 
-#closeModal :hover {
+#closeModal:hover {
     cursor: pointer;
 }
 

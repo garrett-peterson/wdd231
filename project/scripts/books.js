@@ -95,7 +95,7 @@ const displayData = (books) => {
         genre.textContent = book.genre;
 
         img.src = `images/${book.image}`;
-        img.alt = "Book Cover";
+        img.alt = `${book.title} cover`;
         img.loading = "lazy";
         img.classList.add('cover');
 
